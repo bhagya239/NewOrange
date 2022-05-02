@@ -41,7 +41,8 @@ public class VerifyUserSearchInAdmin extends baseClass{
   @Test
   public void verifyUserSearch() {
 	  
-	  driver.findElement(userMgmt.adminModule).click();
+	  userMgmt= new UserMgmtPage();
+	 userMgmt.adminModule.click();
 	  
 	  driver.findElement(userMgmt.systemUserTxtBox).sendKeys(util.propertyHandling.getProperty("organgeHRMUsername"));
 	  
