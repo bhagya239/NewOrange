@@ -8,11 +8,14 @@ public class UserMgmtPage {
 	
 //	public By adminModule=By.id("menu_admin_viewAdminModule");
 	
-	public By userMgmtModule= By.id("menu_admin_UserManagement");
+//	public By userMgmtModule= By.id("menu_admin_UserManagement");
 	
 	public By systemUserTxtBox= By.id("searchSystemUser_userName");
 	
 	@FindBy(id="menu_admin_viewAdminModule")
 	public WebElement adminModule;
+	
+	@FindBy(id="menu_admin_UserManagement")
+	public WebElement userMgmtModule;
 
 }
