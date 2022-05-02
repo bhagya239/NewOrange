@@ -1,11 +1,13 @@
 package com.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class EmployeeListPage {
 	
 	//PIM Module
-		public By pimModule=By.id("menu_admin_viewAdminModule");
+//		public By pimModule=By.id("menu_admin_viewAdminModule");
 	
 	// EmployeeList Module 
 			public By employeeListMenu=By.id("menu_pim_viewEmployeeList"); 
@@ -21,5 +23,10 @@ public class EmployeeListPage {
 	//Employee Name Text Box
 			
 			public By emplNameTextBox=By.id("empsearch_employee_name_empName");
+			
+			
+			@FindBy(id="menu_admin_viewAdminModule")
+			public WebElement pimModule;
+			
 			
 }
