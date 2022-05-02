@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+			<listener class-name="com.CyberSuccess.TestListeners">
+		</listener>
+	</listeners>
+	<test thread-count="2" parallel="classes" name="Test1">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="RegressionTests.OrangeHRMLogin" />
+		<!-- 	<class name="RegressionTests.VerifyUserSearchInAdmin" /> -->
+			<class name="RegressionTests.GetEmployeDetails" />
+		</classes>
+	</test> <!-- Test -->
+
+<!-- 	<test thread-count="2" parallel="classes" name="Test2">
+		<parameter name="browser" value="Mozila" />
+		<classes>
+			<class name="RegressionTests.OrangeHRMLogin" />
+			<class name="RegressionTests.VerifyUserSearchInAdmin" />
+		</classes>
+	</test> -->
+</suite> <!-- Suite -->
