@@ -28,5 +28,5 @@ public class EmployeeListPage {
 			@FindBy(id="menu_admin_viewAdminModule")
 			public WebElement pimModule;
 			
-			
+			public By supName=By.id("empsearch_supervisor_name");
 }
